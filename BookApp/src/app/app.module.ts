@@ -5,7 +5,7 @@ import { MyApp } from './app.component';
 
 import { CoverPage } from '../pages/cover-page/cover-page';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+import { TocPage } from '../pages/toc-page/toc-page';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +15,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CoverPage,
     ItemDetailsPage,
-    ListPage
+    TocPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     CoverPage,
     ItemDetailsPage,
-    ListPage
+    TocPage
   ],
   providers: [
     StatusBar,
