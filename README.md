@@ -1,3 +1,7 @@
+~ I was having some trouble and felt I just needed to move on to try and finish the rest of the class ~
+
+
+
 **PageTurnerBookApp**
 
 Lesson 7 Hands-On 5 points
