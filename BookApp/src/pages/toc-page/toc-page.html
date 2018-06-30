@@ -9,11 +9,11 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
+    <button ion-item *ngFor="let chapter of chapters" (click)="chapterTapped($event, chapter)">
+      <ion-icon name="{{chapter.icon}}" item-left></ion-icon>
+      {{chapter.title}}
+      <div class="chapter-note" item-right>
+        {{chapter.note}}
       </div>
     </button>
   </ion-list>

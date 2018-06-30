@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { CoverPage } from '../pages/cover-page/cover-page';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { ChapterDetailsPage } from '../pages/chapter-details/chapter-details';
 import { TocPage } from '../pages/toc-page/toc-page';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,7 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     CoverPage,
-    ItemDetailsPage,
+    ChapterDetailsPage,
     TocPage
   ],
   imports: [
@@ -25,7 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     CoverPage,
-    ItemDetailsPage,
+    ChapterDetailsPage,
     TocPage
   ],
   providers: [

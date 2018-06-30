@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
 
-import { ItemDetailsPage } from '../item-details/item-details';
+import { ChapterDetailsPage } from '../chapter-details/chapter-details';
 
 @Component({
   selector: 'page-toc-page',
@@ -10,14 +10,14 @@ import { ItemDetailsPage } from '../item-details/item-details';
 })
 export class TocPage {
   icons: string[];
-  items: Array<{title: string, note: string, icon: string}>;
+  chapters: Array<{title: string, note: string, icon: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.icons = ['book'];
 
-    this.items = [];
+    this.chapters = [];
     for(let i = 1; i < 4; i++) {
-      this.items.push({
+      this.chapters.push({
         title: 'Chapter ' + i,
         note: 'This is item #' + i,
         icon: 'book'
@@ -25,9 +25,9 @@ export class TocPage {
     }
   }
 
-  itemTapped(event, item) {
-    this.navCtrl.push(ItemDetailsPage, {
-      item: item
+  chapterTapped(event, chapter) {
+    this.navCtrl.push(ChapterDetailsPage, {
+      chapter: chapter
     });
   }
 }
