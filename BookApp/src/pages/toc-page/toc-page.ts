@@ -10,16 +10,25 @@ import { ChapterDetailsPage } from '../chapter-details/chapter-details';
 })
 export class TocPage {
   icons: string[];
-  chapters: Array<{title: string, note: string, icon: string}>;
+  chapters: Array<{title: string, note: any, icon: string}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.icons = ['book'];
 
     this.chapters = [];
     for(let i = 1; i < 4; i++) {
+      const Content = () => {
+        if (i=1) { 
+          return "function works" 
+        } else if (i=2) { 
+          return "else if works" 
+        } else { 
+          return "else works" 
+        } 
+      };
       this.chapters.push({
         title: 'Chapter ' + i,
-        note: 'This is item #' + i,
+        note: Content,
         icon: 'book'
       });
     }
